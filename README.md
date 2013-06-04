@@ -8,24 +8,21 @@ stock-trade-date
 
 go get github.com/liusongsen/stock-trade-date
 
-
 用法:
 
 import github.com/liusongsen/stock-trade-date
 
 股市今天是否开盘
-isopen := trade.IsOpen()
 
+isopen := trade.IsOpen()
 
 求T-1日期:
 
 time1 := trade.ClubT1()
 
-
 求T-2日期：
 
 time2 := trade.ClubT2()
-
 
 
 [ `go test` | done: 231.117ms ]
