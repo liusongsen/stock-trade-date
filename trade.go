@@ -79,6 +79,7 @@ func ClubT1() string {
 //计算T-2日期
 func ClubT2() string {
 
-	rtime := club(time.Now().AddDate(0, 0, -2))
+	rtime := club(time.Now().AddDate(0, 0, -1))
+	rtime = club(rtime.AddDate(0, 0, -1))
 	return rtime.Format("20060102")
 }
