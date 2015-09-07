@@ -43,6 +43,8 @@ func club(inputTime time.Time) (rtime time.Time) {
 	ivse.Ivs = append(ivse.Ivs, Interval{BeginDate: time.Date(2015, time.May, 1, 0, 0, 0, 0, time.UTC), EndDate: time.Date(2015, time.May, 1, 0, 0, 0, 0, time.UTC)})
 	//六月 6.22
 	ivse.Ivs = append(ivse.Ivs, Interval{BeginDate: time.Date(2015, time.June, 22, 0, 0, 0, 0, time.UTC), EndDate: time.Date(2015, time.June, 22, 0, 0, 0, 0, time.UTC)})
+	//九月 9.3-9.5
+	ivse.Ivs = append(ivse.Ivs, Interval{BeginDate: time.Date(2015, time.September, 3, 0, 0, 0, 0, time.UTC), EndDate: time.Date(2015, time.September, 5, 0, 0, 0, 0, time.UTC)})
 	//十月 10.1-10.2
 	ivse.Ivs = append(ivse.Ivs, Interval{BeginDate: time.Date(2015, time.October, 1, 0, 0, 0, 0, time.UTC), EndDate: time.Date(2015, time.October, 2, 0, 0, 0, 0, time.UTC)})
 	//十月 10.5-10.7
