@@ -31,24 +31,18 @@ func club(inputTime time.Time) (rtime time.Time) {
 	if inputTime.Weekday() == time.Sunday {
 		rtime = inputTime.AddDate(0, 0, -2)
 	}
-	//一月 1.1 1.2
-	ivse.Ivs = append(ivse.Ivs, Interval{BeginDate: time.Date(2015, time.January, 1, 0, 0, 0, 0, time.UTC), EndDate: time.Date(2015, time.January, 2, 0, 0, 0, 0, time.UTC)})
-	//二月 2.18 -2.20
-	ivse.Ivs = append(ivse.Ivs, Interval{BeginDate: time.Date(2015, time.February, 18, 0, 0, 0, 0, time.UTC), EndDate: time.Date(2015, time.February, 20, 0, 0, 0, 0, time.UTC)})
-	//二月 2.23 -2.24
-	ivse.Ivs = append(ivse.Ivs, Interval{BeginDate: time.Date(2015, time.February, 23, 0, 0, 0, 0, time.UTC), EndDate: time.Date(2015, time.February, 24, 0, 0, 0, 0, time.UTC)})
-	//四月 4.6
-	ivse.Ivs = append(ivse.Ivs, Interval{BeginDate: time.Date(2015, time.April, 6, 0, 0, 0, 0, time.UTC), EndDate: time.Date(2015, time.April, 6, 0, 0, 0, 0, time.UTC)})
-	//五月 5.1
-	ivse.Ivs = append(ivse.Ivs, Interval{BeginDate: time.Date(2015, time.May, 1, 0, 0, 0, 0, time.UTC), EndDate: time.Date(2015, time.May, 1, 0, 0, 0, 0, time.UTC)})
-	//六月 6.22
-	ivse.Ivs = append(ivse.Ivs, Interval{BeginDate: time.Date(2015, time.June, 22, 0, 0, 0, 0, time.UTC), EndDate: time.Date(2015, time.June, 22, 0, 0, 0, 0, time.UTC)})
-	//九月 9.3-9.5
-	ivse.Ivs = append(ivse.Ivs, Interval{BeginDate: time.Date(2015, time.September, 3, 0, 0, 0, 0, time.UTC), EndDate: time.Date(2015, time.September, 5, 0, 0, 0, 0, time.UTC)})
-	//十月 10.1-10.2
-	ivse.Ivs = append(ivse.Ivs, Interval{BeginDate: time.Date(2015, time.October, 1, 0, 0, 0, 0, time.UTC), EndDate: time.Date(2015, time.October, 2, 0, 0, 0, 0, time.UTC)})
-	//十月 10.5-10.7
-	ivse.Ivs = append(ivse.Ivs, Interval{BeginDate: time.Date(2015, time.October, 5, 0, 0, 0, 0, time.UTC), EndDate: time.Date(2015, time.October, 7, 0, 0, 0, 0, time.UTC)})
+	//一月 1.1
+	ivse.Ivs = append(ivse.Ivs, Interval{BeginDate: time.Date(2016, time.January, 1, 0, 0, 0, 0, time.UTC), EndDate: time.Date(2016, time.January, 1, 0, 0, 0, 0, time.UTC)})
+	//二月 2.8 -2.12
+	ivse.Ivs = append(ivse.Ivs, Interval{BeginDate: time.Date(2016, time.February, 8, 0, 0, 0, 0, time.UTC), EndDate: time.Date(2016, time.February, 12, 0, 0, 0, 0, time.UTC)})
+	//四月 4.4
+	ivse.Ivs = append(ivse.Ivs, Interval{BeginDate: time.Date(2016, time.April, 4, 0, 0, 0, 0, time.UTC), EndDate: time.Date(2016, time.April, 4, 0, 0, 0, 0, time.UTC)})
+	//六月 6.9-6.10
+	ivse.Ivs = append(ivse.Ivs, Interval{BeginDate: time.Date(2016, time.June, 9, 0, 0, 0, 0, time.UTC), EndDate: time.Date(2016, time.June, 10, 0, 0, 0, 0, time.UTC)})
+	//九月 9.15-9.16
+	ivse.Ivs = append(ivse.Ivs, Interval{BeginDate: time.Date(2016, time.September, 15, 0, 0, 0, 0, time.UTC), EndDate: time.Date(2016, time.September, 16, 0, 0, 0, 0, time.UTC)})
+	//十月 10.3-10.7
+	ivse.Ivs = append(ivse.Ivs, Interval{BeginDate: time.Date(2016, time.October, 3, 0, 0, 0, 0, time.UTC), EndDate: time.Date(2016, time.October, 7, 0, 0, 0, 0, time.UTC)})
 
 	//迭代判断当前日期是否在法定日期范围内
 	for _, v := range ivse.Ivs {
